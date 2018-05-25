@@ -1,7 +1,7 @@
 package Shape;
 
 
-public class FiguraColorata<T extends Figura> implements Figura, Colore{
+public class FiguraColorata<T extends Figura> implements ComparableFigure, Colore{
 
 	private Figura figura;
 	private Colore colore;
@@ -11,6 +11,14 @@ public class FiguraColorata<T extends Figura> implements Figura, Colore{
 		this.colore=c;
 	}
 	
+
+
+	@Override
+	public int compare(Figura o1, Figura o2) {
+		// TODO Auto-generated method stub
+		return ComparableFigure.super.compare(o1, o2);
+	}
+
 
 
 	@Override

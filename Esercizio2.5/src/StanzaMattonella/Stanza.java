@@ -26,13 +26,6 @@ public class Stanza{
 		this.pavimento = pavimento;
 	}
 	
-	
-public static void main(String[] args) {
-	FiguraColorata<Cerchio> c= new FiguraColorata<>();
-	
-	System.out.println(c.area());
-
-}
 
 
 }
